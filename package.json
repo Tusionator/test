@@ -1,7 +1,7 @@
 aaa
 <<<<<<< HEAD
-  "version": "0.8.0-SNAPSHOT",
+  "version": "0.9.0-SNAPSHOT",
 =======
-  "version": "0.6.0",
+  "version": "0.9.0-SNAPSHOT",
 >>>>>>> a800ebe61ee337df0188239a0cf2ce2c619535ea
 bbb
