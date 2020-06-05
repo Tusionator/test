@@ -7,7 +7,7 @@ git checkout develop
 version_line=`cat package.json | grep '"version":'`
 version=`echo $version_line | grep -P -o '\d+\.\d+\.\d+'`
 rc_version="$version-RC"
-echo "release_branch_name=release/1" > release.properties
+echo "release_branch_name=release/2" > release.properties
 
 echo "upgrading develop and rc_branch to -RC version to avoid merge conflicts when merging RC into develop in future"
 echo "adding '-RC' in version number"
@@ -17,8 +17,8 @@ git commit -a -m "New release candidate version: $rc_version"
 git push origin develop
 
 echo "making RC branch"
-git checkout -b "release/1"
-git push origin release/1
+git checkout -b "release/2"
+git push origin release/2
 
 
 echo "incresing develop version"
